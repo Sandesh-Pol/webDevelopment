@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 999;
+  }
+  
+  .menu label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  
+  .menu nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s;
+  }
+  
+  .menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu nav ul li {
+    line-height: 50px;
+    border-bottom: 1px solid #888;
+  }
+  
+  .menu nav ul li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu input[type="checkbox"]:checked + nav {
+    left: 0;
+  }
+  

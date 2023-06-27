@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS code */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      overflow-y: auto;
+      transition: all 0.3s ease;
+    }
+    
+    .navbar ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+    
+    .navbar li {
+      padding: 12px 15px;
+      border-bottom: 1px solid #555;
+    }
+    
+    .navbar li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .navbar li a:hover {
+      background-color: #555;
+    }
+    
+    .navbar-toggle {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: none;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 999;
+    }
+    
+    @media (max-width: 768px) {
+      /* Adjustments for mobile devices */
+      .navbar {
+        width: 0;
+      }
+      
+      .navbar.active {
+        width: 250px;
+      }
+      
+      .navbar-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML code -->
+  <div class="navbar" id="navbar">
+    <div class="navbar-toggle" onclick="toggleNavbar()">&#9776;</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    // JavaScript code to toggle the navbar
+    function toggleNavbar() {
+      var navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

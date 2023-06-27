@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+<link rel="stylesheet" href="stylesheet.css">
+
+<body>
+    <main>
+        <div class="header">
+            <div id="menu">
+                <a href="#">Home</a>
+                <a href="#">Design</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+
+            </div>
+            <div class="nav-menu-icon">
+                <button onclick="MenuOn()"><i class="fa fa-bars" aria-hidden="false"></i></a>
+            </div>
+        </div>
+        <div class="yellow">
+            <div class="img1">
+                <img src="./download.jpg" alt="R.D.J">
+                <h1>Robert John Downey Jr.</h1>
+            </div>
+            <div class="lorem">
+                <pre style="line-height: 40px;">
+                                  Robert John Downey Jr. (born April 4, 1965)[1] is 
+                                producer. His career has been characterized by critical 
+                             in his youth, followed by a period of substance abuse and leg
+                           a resurgence of commercial success later in his career. his career.
+                               by Time magazine among the 100 most influential p most infl
+                                  by Time magazine among the 100 most influential pmost
+                </pre>
+                <div class="img2">
+                    <img src="./right-arrow.png" alt="array">
+                </div>
+            </div>
+        </div>
+        <div class="black">
+            <h2>design</h2>
+
+            <h6>outside, tasty on teat inside</h6>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus reiciendis <br>
+                obcaecati explicabo libero eligendi perspiciatis consequatur incidunt doloremque <br>
+                ipsa aut, animi sit suscipit expedita, ratione molestiae vel. Obcaecati, nisi <br>
+                perspiciatis?suscipit expedita, ratione molestiae vel. Obcaecati, nisi </p> <br>
+            <div class="btn">
+                <button>Learn More</button>
+            </div>
+
+            <div class="gallry">
+                <div class="imgs">
+                    <img src="./img1.png" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img2.jpg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img3.jpg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img4.jpg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img6.jpg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img5.jpg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img6.jpg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img7.jpg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="img2.jpg" alt="">
+                </div>
+            </div>
+            <div class="btn2">
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="inp">
+                <div>
+                    <input type="text" placeholder="Enter the name">
+                </div>
+                <div>
+                    <input type="email" name="Email" placeholder="Enter email address">
+                </div>
+                <textarea name="" placeholder="address : " id="" cols="41" rows="5"></textarea>
+            </div>
+            <div class="SYMBOL">
+                <H3>CONTACT US</H3>
+                <br>
+                <div class="call">
+
+                    <p> <img class="logo" src="./call-center.png" alt="">MO.NO: 0123456789</p>
+                </div>
+                <br><br><br>
+                <div class="logo" id="sm">
+                    <div><img src="./instagram.png" alt=""></div>
+                    <div><img src="./whatsapp.png" alt=""></div>
+                    <div><img src="./facebook.png" alt=""></div>
+                </div>
+
+            </div>
+
+    </main>
+    <script>
+        var toggle = true;
+        var on = true;
+        var off = false;
+        function MenuOn(){
+            if(toggle == on){
+            document.getElementById("menu").style.display = "none";
+            toggle = false;
+        }
+        else if(toggle == off){
+            document.getElementById("menu").style.display = "block";
+            toggle = true;
+        }
+    }
+    </script>
+</body>
+
+</html>

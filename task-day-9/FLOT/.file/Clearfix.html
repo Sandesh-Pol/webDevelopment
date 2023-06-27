@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+div {
+  border: 3px solid #ff0000;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  /* clear: both; */
+  display: table;
+}
+
+.img2 {
+  float: right;
+}
+div{
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+<h1>The Clearfix Use</h1>
+
+    <p>
+        Here, the floating image is taller than the element containing it, so it overflows outside its container:
+    </p>
+            <div style="text-align: center;">
+                
+                <img class="img1" src="../IMAGES/izac.jpg" alt="Pineapple" width="170" height="170">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum cupiditate dicta, cumque fuga laborum molestiae optio architecto necessitatibus impedit itaque sapiente non aperiam distinctio natus. Quas qui non tempore?    
+                
+            </div>
+
+    <p style="clear:right">
+        Add the clearfix hack to the containing element, to fix this problem:
+    </p>
+            <div class="clearfix" style="text-align: center;">
+                <img class="img2" src="../IMAGES/izac.jpg" alt="Pineapple" width="170" height="170">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum cupiditate dicta, cumque fuga laborum molestiae optio architecto necessitatibus impedit itaque sapiente non aperiam distinctio natus. Quas qui non tempore?
+            </div>
+
+</body>
+</html>
