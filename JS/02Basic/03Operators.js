@@ -1,4 +1,4 @@
-// D = (L - S)/ L * 100;
+
 
 var sellingPrice = 199;
 
