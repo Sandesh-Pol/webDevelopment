@@ -1,6 +1,6 @@
 var fullName = "Sandesh Pol";
 
-var languageName = "Anguler";
+var languageName = "Angular";
 
 var isLoggedIn = false;
 
