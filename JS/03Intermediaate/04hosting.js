@@ -12,7 +12,7 @@ var bigTipper = function(a){
     var bill = parseInt(a);
     console.log(bill + 15);
 }
-
+ 
 bigTipper("200")
 
 console.log(name);
