@@ -5,3 +5,10 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.sortBtn{
+  display: flex;
+  
+}
+.b1{
+  display: flex;
+}
