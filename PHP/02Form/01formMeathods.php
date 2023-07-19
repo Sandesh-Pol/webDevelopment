@@ -79,8 +79,8 @@
       </div>
 
       <div class="form-group">
-        <label for="age">Collage name :</label>
-        <input type="text" id="age" name="age" required>
+        <label for="age">Age :</label>
+        <input type="age" id="age" name="age" required>
       </div>
 
       <div class="form-group">
