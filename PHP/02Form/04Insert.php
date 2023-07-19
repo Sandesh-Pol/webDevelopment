@@ -1,14 +1,7 @@
-
-<?php  
-        include "01formMeathods.php";
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $age   = $_POST['age'];
-        $gender =  $_POST['gender'];
-        $message = $_POST['message'];
-
-    include '03conneection.php';
-
+<!-- 04Insert.php -->
+<?php 
+ include "00declare.php";    
+ include "02conneection.php";   
     $sql = "INSERT INTO `datainfo`(`name`, `email`, `age`, `gender`, `message`) VALUES ('$name', '$email', $age, '$gender', '$message')";
 
 

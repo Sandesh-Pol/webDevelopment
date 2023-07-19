@@ -1,5 +1,6 @@
+<!-- 03display.php -->
 <?php
- include '03conneection.php';
+ include '02conneection.php';
 
 $sqlSelect = "SELECT * FROM datainfo";
 

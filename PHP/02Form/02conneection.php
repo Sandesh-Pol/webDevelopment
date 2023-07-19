@@ -1,3 +1,4 @@
+<!-- 02conneection.php -->
 <?php
     $servername =  "localhost";
     $username = "root";
