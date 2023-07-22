@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 300px;
+  height: 100vh;
+  margin: 0;
+  background: #ff0084; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #33001b,
+    #ff0084
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #33001b,
+    #ff0084
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  grid-template-rows: repeat(3, 140px);
+}
+.board .dragBox div {
+  pointer-events: none;
+}
+
+.cell {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  background-color: transparent;
+  border: 5px solid #ffffff;
+}
+.cell:hover {
+  cursor: pointer;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.cell:nth-child(3n) {
+  border-right: none;
+}
+
+.cell:nth-child(-n + 3) {
+  border-top: none;
+  border-left: none;
+}
+
+.cell:nth-last-child(-n + 3) {
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+}
+.c {
+  border-right: none;
+}
+.drag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 420px;
+  width: 100px;
+  gap: 10px;
+  margin: 0 40px;
+  cursor: grab;
+}
+.drag .dragBox {
+  padding: 15px;
+  background: rgb(255, 255, 255, 0.1);
+}
+.cross {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+.cross::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+.circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.reset {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  background: #1616167a;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
