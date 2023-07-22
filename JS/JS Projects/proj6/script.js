@@ -23,7 +23,6 @@ const questions = [
     'd': " Mozilla",
     'correct': "a",
   },
-
   {
     'que': "Which HTML element is used for the largest heading?",
     'a': "<h6>",
