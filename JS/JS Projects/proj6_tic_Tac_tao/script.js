@@ -12,4 +12,13 @@ function drop(event){
     event.target.appendChild(document.getElementById(data))
 }
 
-  
+
+
+const resetButton = document.querySelector(".reset");
+
+resetButton.addEventListener("click", function() {
+  location.reload();
+});
+
+
+

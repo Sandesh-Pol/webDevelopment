@@ -23,9 +23,6 @@ body {
   grid-template-columns: repeat(3, 140px);
   grid-template-rows: repeat(3, 140px);
 }
-.board .dragBox div {
-  pointer-events: none;
-}
 
 .cell {
   width: 140px;
@@ -62,6 +59,10 @@ body {
 }
 .c {
   border-right: none;
+}
+.board .cell div {
+  pointer-events: none;
+  scale: 1.5;
 }
 .drag {
   position: relative;
