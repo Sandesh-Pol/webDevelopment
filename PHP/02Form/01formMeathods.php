@@ -86,7 +86,7 @@
 
 <body>
   <div class="form-container">
-    <form action="02display.php" method="post">
+    <form action="03display.php" method="post">
       <div class="form-group">
         <label for="name">Name :</label>
         <input type="text" id="name" name="name" required>
