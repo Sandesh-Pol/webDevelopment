@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Dynamic Option List</title>
+</head>
+<body>
+    <form>
+        <label>
+            <input type="radio" name="category" value="fruits" checked> Fruits
+        </label>
+        <label>
+            <input type="radio" name="category" value="vegetables"> Vegetables
+        </label>
+    </form>
+    <select id="item"></select>
+
+    <script>
+        const category = document.querySelectorAll('input');
+        const item = document.getElementById("item");
+        
+        const options = {
+            fruits: ["Mango", "Banana", "Cherry"],
+            vegetables: ["Carrot", "Broccoli", "Spinach"]
+        };
+
+        function updateOptions() {
+            const selectedCategory = document.querySelector('input:checked').value;
+
+item.innerHTML = options[selectedCategory].map(option => `<option value="${option}">${option}</option>`).join('');
+        }
+
+        category.forEach(radio => {
+            radio.addEventListener("change", updateOptions);
+        });
+
+        updateOptions();
+    </script>
+</body>
+</html>

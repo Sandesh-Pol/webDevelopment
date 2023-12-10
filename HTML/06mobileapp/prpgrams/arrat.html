@@ -1,0 +1,56 @@
+<html>
+  <head><title>Array Implementation</title></head>
+  <body>
+    <script>
+      var arr1 = new Array(11,9,13,34,45)
+      var arr2 = new Array(12,23,34,45,56)
+      
+      document.write("Elements of array : "+arr1+"<br>")
+	  
+	  document.write("Array length : "+arr1.length+"<br>")
+      
+      arr1.push(12,23,90,87)
+      
+      document.write("Elements of array : "+arr1+"<br>")
+      
+      arr1.pop()
+      
+      document.write("Elements of array : "+arr1+"<br>")
+      
+      arr1.shift()
+      
+      document.write("Elements of array shift : "+arr1+"<br>")
+      
+      arr1.unshift(10,20,)
+      
+      document.write("Elements of array : "+arr1+"<br>")
+	  
+	  
+	  document.write("Elements of array : "+arr1.concat(arr2)+"<br>")
+	  
+	  document.write("Elements of array : "+arr1.slice(2,4)+"<br>")
+	  
+	  document.write("Elements of array : "+arr1.splice(2,3,12,10,2)+"<br>")
+	  
+	  document.write("Elements of array : "+arr1.indexOf(12)+"<br>")
+	  
+	  document.write("Elements of array : "+arr1.lastIndexOf(2)+"<br>")
+	  
+	  document.write("Elements of array : "+arr2.sort()+"<br>")
+	  
+	  document.write("Elements of array : "+arr1.reverse()+"<br>")
+	  
+	  document.write("Elements of array : "+arr1.filter(number => number % 2 === 0)+"<br>");
+
+	  document.write("Elements of array : "+arr1.map(number => number * number));
+
+
+
+
+	  
+
+
+  
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .frm {
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 500px;
+        }
+
+        .frm form {
+            margin-left: 30px;
+        }
+
+        .frm label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .frm input[type="text"] {
+            width: 120px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .frm input[type="button"] {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .frm input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="frm">
+        <form name="frm1">
+            <label for="fno"><h2>Arithmetic Operation</h2></label>
+            <label for="fno">Enter the First No:</label>
+            <input type="text" id="fno" name="fno"><br><br>
+
+            <label for="sno">Enter the Second No:</label>
+            <input type="text" id="sno" name="sno"><br><br>
+
+            <label for="Rno" id="res">Answer:</label>
+            <input type="text" id="Rno" name="Rno"><br><br>
+
+            <input type="button" value="Addition" onclick="add()">
+            <input type="button" value="Subtraction" onclick="sub()">
+            <input type="button" value="Multiplication" onclick="mul()">
+            <input type="button" value="Division" onclick="div()"><br><br>
+
+            <input type="button" value="Modulus" onclick="mod()">
+            <input type="button" value="Exponential" onclick="expo()"><br><br>
+
+            <input type="button" value="Increment" onclick="inc()">
+            <input type="button" value="Decrement" onclick="dec()"><br><br>
+
+            <input type="button" value="RESET" onclick="reset()">
+        </form>
+        <script>
+            function updateResult(operation) {
+                document.getElementById("res").innerHTML = operation;
+            }
+
+
+            function add() {
+                let a = parseInt(frm1.fno.value);
+                let b = parseInt(frm1.sno.value);
+                let c = a + b;
+                frm1.Rno.value = c;
+                updateResult("Addition");
+            }
+
+            function sub() {
+                let a = parseInt(frm1.fno.value);
+                let b = parseInt(frm1.sno.value);
+                let c = a - b;
+                frm1.Rno.value = c;
+                updateResult("Subtraction");
+            }
+
+            function mul() {
+                let a = parseInt(frm1.fno.value);
+                let b = parseInt(frm1.sno.value);
+                let c = a * b;
+                frm1.Rno.value = c;
+                updateResult("Multiplication");
+            }
+
+            function div() {
+                let a = parseInt(frm1.fno.value);
+                let b = parseInt(frm1.sno.value);
+                let c = a / b;
+                frm1.Rno.value = c;
+                updateResult("Division");
+            }
+
+            function mod() {
+                let a = parseInt(frm1.fno.value);
+                let b = parseInt(frm1.sno.value);
+                let c = a % b;
+                frm1.Rno.value = c;
+                updateResult("Modulus");
+            }
+
+            function expo() {
+                let a = parseInt(frm1.fno.value);
+                let b = parseInt(frm1.sno.value);
+                let c = a ** b;
+                frm1.Rno.value = c;
+                updateResult("Exponential");
+            }
+
+            function inc() {
+                let a = parseInt(frm1.fno.value);
+                let c = a + 1;
+                frm1.Rno.value = c;
+                updateResult("Increment");
+            }
+
+            function dec() {
+                let b = parseInt(frm1.sno.value);
+                let c = b - 1;
+                frm1.Rno.value = c;
+                updateResult("Decrement");
+            }
+
+            function reset() {
+                frm1.fno.value = "";
+                frm1.sno.value = "";
+                frm1.Rno.value = "";
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>New Window</title>
+    </head>
+    <script>
+        var myWin; 
+
+        function openWin() {
+            myWin = window.open("", "", "height=500, width=800, top=300, left=300, resizable=1");
+            myWin.document.write('<p>This is written in the new window...!</p>');
+            setTimeout(() => {
+                myWin.close();
+            }, 3000);
+        }
+    </script>
+    <body>
+        <button onclick="openWin()">Open</button>
+    </body>
+</html>
