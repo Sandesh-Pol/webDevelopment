@@ -5,7 +5,8 @@ Flip The Card Game
 
 Analog Clock
 
-![image](https://github.com/Sandesh-Pol/webDevelopment/assets/135794224/e1758127-7a4e-4e08-aaa4-b77c20378cb5)
+![image](https://github.com/Sandesh-Pol/webDevelopment/assets/135794224/30e33601-78ec-4fe9-b439-d69eee081522)
+
 
 
 Quiz App 
@@ -24,6 +25,9 @@ Shop Webpage
 
 
 
+Calculater
+
+![image](https://github.com/Sandesh-Pol/webDevelopment/assets/135794224/72d0a849-c7b6-47e6-ac1d-d30e9efb1b9c)
 
 
 
